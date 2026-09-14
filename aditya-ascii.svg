@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="370" height="498" viewBox="0 0 520 498" role="img" aria-label="Aditya Narula ASCII portrait">
-  <g fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" xml:space="preserve">
+  <rect x="0" y="30" width="520" height="468" fill="#0d1117"/>
+  <g fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" xml:space="preserve">
     <text x="20" y="82">                 .-''''-.</text>
     <text x="20" y="98">              .-'  .--.  '-.</text>
     <text x="20" y="114">            .'    /    \    '.</text>
