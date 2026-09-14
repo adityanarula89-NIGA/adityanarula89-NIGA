@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="498" viewBox="0 0 490 498" role="img" aria-label="Aditya Narula terminal information card" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
+  <style>@keyframes line{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:translateX(0)}}.l{opacity:0;animation:line .45s ease-out forwards}</style>
+  <rect width="490" height="498" rx="12" fill="url(#bg)"/><rect x=".5" y=".5" width="489" height="497" rx="12" fill="none" stroke="#30363d"/>
+  <line x1="0" y1="30" x2="490" y2="30" stroke="#30363d"/><circle cx="20" cy="15" r="5" fill="#ff5f56"/><circle cx="36" cy="15" r="5" fill="#ffbd2e"/><circle cx="52" cy="15" r="5" fill="#27c93f"/>
+  <text x="245" y="19" fill="#7d8590" font-size="12" text-anchor="middle">aditya@github: ~$ neofetch</text>
+  <g class="l" style="animation-delay:.15s"><text x="24" y="76" fill="#58a6ff" font-size="16">── adityanarula89-NIGA@github ─────────</text></g>
+  <g class="l" style="animation-delay:.3s"><text x="24" y="108" fill="#ffa657" font-size="15">. Role: </text><text x="132" y="108" fill="#c9d1d9" font-size="15">Just an AI Product Builder</text></g>
+  <g class="l" style="animation-delay:.45s"><text x="24" y="140" fill="#ffa657" font-size="15">. Location: </text><text x="132" y="140" fill="#c9d1d9" font-size="15">Jaipur, Rajasthan</text></g>
+  <g class="l" style="animation-delay:.6s"><text x="24" y="172" fill="#ffa657" font-size="15">. University: </text><text x="132" y="172" fill="#c9d1d9" font-size="15">The LNM Institute of Information</text><text x="132" y="193" fill="#c9d1d9" font-size="15">  Technology</text></g>
+  <g class="l" style="animation-delay:.75s"><text x="24" y="238" fill="#58a6ff" font-size="16">── Contact ─────────────────────────────</text></g>
+  <g class="l" style="animation-delay:.9s"><text x="24" y="270" fill="#ffa657" font-size="15">. GitHub: </text><text x="132" y="270" fill="#79c0ff" font-size="15">adityanarula89-NIGA</text></g>
+  <g class="l" style="animation-delay:1.05s"><text x="24" y="302" fill="#ffa657" font-size="15">. Email: </text><text x="132" y="302" fill="#79c0ff" font-size="15">aditya.narula89@gmail.com</text></g>
+  <g class="l" style="animation-delay:1.2s"><text x="24" y="350" fill="#58a6ff" font-size="16">── System ──────────────────────────────</text></g>
+  <g class="l" style="animation-delay:1.35s"><text x="24" y="382" fill="#ffa657" font-size="15">. Focus: </text><text x="132" y="382" fill="#c9d1d9" font-size="15">AI products · startups · building</text></g>
+  <g class="l" style="animation-delay:1.5s"><text x="24" y="430" fill="#39d353" font-size="15">[ ready ] </text><text x="132" y="430" fill="#c9d1d9" font-size="15">shipping useful things</text></g>
+  <text x="24" y="470" fill="#7d8590" font-size="13">aditya@github:~$ <tspan fill="#c9d1d9">whoami</tspan></text>
+</svg>
