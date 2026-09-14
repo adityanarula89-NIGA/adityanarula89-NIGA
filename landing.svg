@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="190" viewBox="0 0 860 190" role="img" aria-label="Animated welcome to Aditya Narula's GitHub profile" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <style>
+    @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes blink { 0%, 45% { opacity: 1; } 46%, 100% { opacity: 0; } }
+    .line { opacity: 0; animation: reveal .55s ease-out forwards; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @media (prefers-reduced-motion: reduce) { .line { opacity: 1; animation: none; } .cursor { opacity: 1; animation: none; } }
+  </style>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
+  <rect width="860" height="190" rx="12" fill="url(#bg)"/>
+  <rect x=".5" y=".5" width="859" height="189" rx="12" fill="none" stroke="#30363d"/>
+  <line x1="0" y1="30" x2="860" y2="30" stroke="#30363d"/>
+  <circle cx="20" cy="15" r="5" fill="#ff5f56"/><circle cx="36" cy="15" r="5" fill="#ffbd2e"/><circle cx="52" cy="15" r="5" fill="#27c93f"/>
+  <text x="430" y="19" fill="#7d8590" font-size="12" text-anchor="middle">aditya@github: ~$ ./welcome.sh</text>
+  <g class="line" style="animation-delay:.15s"><text x="28" y="66" fill="#7d8590" font-size="15">$ booting profile...</text></g>
+  <g class="line" style="animation-delay:.55s"><text x="28" y="99" fill="#39d353" font-size="24" font-weight="700">Welcome, I'm Aditya Narula</text></g>
+  <g class="line" style="animation-delay:.95s"><text x="28" y="128" fill="#58a6ff" font-size="16">AI Product Builder · turning ideas into useful things</text></g>
+  <g class="line" style="animation-delay:1.35s"><text x="28" y="161" fill="#c9d1d9" font-size="15">$ explore --profile <tspan fill="#f2cc60">ready</tspan><tspan class="cursor" fill="#c9d1d9">_</tspan></text></g>
+</svg>
