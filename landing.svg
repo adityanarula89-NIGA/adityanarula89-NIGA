@@ -2,18 +2,29 @@
   <style>
     @keyframes reveal { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes blink { 0%, 45% { opacity: 1; } 46%, 100% { opacity: 0; } }
+    @keyframes scan { from { transform: translateY(0); opacity: 0; } 12% { opacity: .55; } 88% { opacity: .55; } to { transform: translateY(135px); opacity: 0; } }
+    @keyframes glitch { 0%, 88%, 100% { opacity: 0; transform: translate(0); } 90% { opacity: .7; transform: translate(3px,-1px); } 92% { opacity: 0; transform: translate(-2px,1px); } 94% { opacity: .5; transform: translate(1px); } }
+    @keyframes pulse { 0%, 100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     .line { opacity: 0; animation: reveal .55s ease-out forwards; }
     .cursor { animation: blink 1s steps(1) infinite; }
-    @media (prefers-reduced-motion: reduce) { .line { opacity: 1; animation: none; } .cursor { opacity: 1; animation: none; } }
+    .scanline { animation: scan 3.2s linear 2s infinite; }
+    .glitch { animation: glitch 4.5s steps(1) 2s infinite; }
+    .status { animation: pulse 1.3s ease-in-out infinite; }
+    .orbit { transform-origin: 742px 100px; animation: orbit 7s linear 2s infinite; }
+    @media (prefers-reduced-motion: reduce) { .line { opacity: 1; animation: none; } .cursor, .scanline, .glitch, .status, .orbit { animation: none; } .cursor { opacity: 1; } .scanline { display: none; } }
   </style>
   <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111722"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs>
   <rect width="860" height="190" rx="12" fill="url(#bg)"/>
   <rect x=".5" y=".5" width="859" height="189" rx="12" fill="none" stroke="#30363d"/>
+  <g opacity=".16" stroke="#22d3ee"><path d="M620 45v110M650 45v110M680 45v110M710 45v110M740 45v110M770 45v110M800 45v110" stroke-dasharray="2 8"/></g>
   <line x1="0" y1="30" x2="860" y2="30" stroke="#30363d"/>
-  <circle cx="20" cy="15" r="5" fill="#ff5f56"/><circle cx="36" cy="15" r="5" fill="#ffbd2e"/><circle cx="52" cy="15" r="5" fill="#27c93f"/>
+  <circle class="status" cx="20" cy="15" r="5" fill="#ff5f56"/><circle class="status" cx="36" cy="15" r="5" fill="#ffbd2e"/><circle class="status" cx="52" cy="15" r="5" fill="#27c93f"/>
   <text x="430" y="19" fill="#7d8590" font-size="12" text-anchor="middle">aditya@github: ~$ ./welcome.sh</text>
+  <g class="orbit" fill="none" stroke="#22d3ee" stroke-width="1" opacity=".75"><ellipse cx="742" cy="100" rx="88" ry="32"/><circle cx="830" cy="100" r="3" fill="#22d3ee"/></g>
   <g class="line" style="animation-delay:.15s"><text x="28" y="66" fill="#7d8590" font-size="15">$ booting profile...</text></g>
-  <g class="line" style="animation-delay:.55s"><text x="28" y="99" fill="#39d353" font-size="24" font-weight="700">Welcome, I'm Aditya Narula</text></g>
+  <g class="line" style="animation-delay:.55s"><text x="28" y="99" fill="#39d353" font-size="24" font-weight="700">Welcome, I'm Aditya Narula</text><text class="glitch" x="28" y="99" fill="#22d3ee" font-size="24" font-weight="700">Welcome, I'm Aditya Narula</text></g>
   <g class="line" style="animation-delay:.95s"><text x="28" y="128" fill="#58a6ff" font-size="16">AI Product Builder · turning ideas into useful things</text></g>
-  <g class="line" style="animation-delay:1.35s"><text x="28" y="161" fill="#c9d1d9" font-size="15">$ explore --profile <tspan fill="#f2cc60">ready</tspan><tspan class="cursor" fill="#c9d1d9">_</tspan></text></g>
+  <g class="line" style="animation-delay:1.35s"><text x="28" y="161" fill="#c9d1d9" font-size="15">$ explore --profile <tspan fill="#f2cc60">ready</tspan><tspan class="cursor" fill="#c9d1d9">_</tspan></text><rect x="260" y="151" width="0" height="3" rx="1.5" fill="#39d353"><animate attributeName="width" from="0" to="180" begin="1.55s" dur="1.8s" fill="freeze"/></rect></g>
+  <rect class="scanline" x="28" y="36" width="804" height="2" fill="#22d3ee"/>
 </svg>
