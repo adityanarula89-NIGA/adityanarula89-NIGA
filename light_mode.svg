@@ -63,7 +63,7 @@
   <text x="540" y="423.79999999999995" font-family="'Consolas', 'Menlo', 'DejaVu Sans Mono', monospace" xml:space="preserve" font-size="16"><tspan fill="#2da44e">                                                    █ </tspan></text>
   <style>
     @keyframes printer { from { transform: translateY(0); } to { transform: translateY(-497.6px); } }
-    .printer { animation: printer 6s steps(50, end) forwards; }
+    .printer { animation: printer 3.5s steps(50, end) forwards; }
     @media (prefers-reduced-motion: reduce) { .printer { display: none; } }
   </style>
   <rect class="printer" x="0" y="0" width="1125" height="497.6" fill="#ffffff" />
